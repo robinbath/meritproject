@@ -1,4 +1,64 @@
+
 body{
-    background: greenyellow;
-    color: green;
+    background-color: #d3e1e0;
+    color: #f4faff;
+}
+
+.logo{
+    font-size: 1.3em;
+}
+
+.menu{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu li a{
+    padding: 10px 15px;
+    color: #f4faff;
+}
+
+.menu li a:hover{
+    background-color: #f4faff;
+    color: #9bb8b6;
+    transition: all ease 0.4s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    top: 0;
+    left:0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 50px;
+    position:fixed;
+    background: #9bb8b6;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+nav div a{
+    color: #f4faff;
+}
+
+#userIcon{
+    width: 27px;
+    height: auto;
+}
+
+.centeralign{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }

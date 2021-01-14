@@ -8,6 +8,20 @@
     {% block head%}{% endblock %}
 </head>
 <body>
+    <nav>
+        <div class="logo">EvergreenLibrary</div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/explore">Explore</a></li>
+            <li><a href="/community">Community</a></li>
+        </ul>
+        <div >
+            <a href="/signin" class="centeralign">
+                <img id="userIcon" src="{{url_for('static', filename='userIcon.png')}}" />
+                <div>SIGN IN</div>
+            </a>
+        </div>
+    </nav>
     {% block body%}{% endblock %}
 </body>
 </html>
