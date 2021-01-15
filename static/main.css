@@ -2,6 +2,7 @@
 body{
     background-color: #d3e1e0;
     color: #f4faff;
+    padding-top: 50px;
 }
 
 .logo{
@@ -38,14 +39,13 @@ nav{
     font-weight: 600;
     letter-spacing: 2px;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 4px 50px;
-    position:fixed;
+    position: fixed;
     background: #9bb8b6;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
-    z-index: 1;
 }
 
 nav div a{
@@ -61,4 +61,17 @@ nav div a{
     display:flex;
     flex-direction: row;
     align-items: center;
+}
+
+.footer{
+    color: #f4faff;
+    background-color: #9bb8b6;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: sans-serif;
+    position: fixed;
+    padding-left: 10px;
+    font-size: 0.5em;
 }
