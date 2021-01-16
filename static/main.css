@@ -7,6 +7,9 @@ body{
 
 .logo{
     font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu{
@@ -74,4 +77,64 @@ nav div a{
     position: fixed;
     padding-left: 10px;
     font-size: 0.5em;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#leaveleft{
+    width: 20px;
+    height: 20px;
+}
+
+#leaveright{
+    width: 20px;
+    height: 20px;
+}
+
+.welcome img{
+    padding: 10px;
+}
+
+.hrline{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    border-bottom: 3px solid  #f4faff;
+    display: block;
+    width: 50vw;
+    text-align: center;
+}
+
+.home-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #285943;
+}
+
+.recommendation-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-bookcover{
+    padding: 20px;
+}
+
+.fontcolor{
+    color:#285943;
+}
+
+#evergreenlogo{
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
 }

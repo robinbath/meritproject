@@ -9,7 +9,10 @@
 </head>
 <body>
     <nav>
-        <div class="logo">EvergreenLibrary</div>
+        <div class="logo">
+            <img id="evergreenlogo" src="{{url_for('static', filename='evergreen_logo.png')}}" />
+            EvergreenLibrary
+        </div>
         <ul class="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/explore">Explore</a></li>
@@ -23,7 +26,10 @@
         </div>
     </nav>
 
-    {% block body%}{% endblock %}
+    <section class="fontcolor">
+        {% block body%}{% endblock %}
+    </section>
+    
 
     <div class="footer">
         <p>© Robin, Shiying, Melissa</p>

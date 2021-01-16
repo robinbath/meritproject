@@ -3,6 +3,38 @@
 {% block head%}{% endblock %}
 
 {% block body%}
-<h1>hello world</h1>
+
+<div class="welcome">
+    <img id="leaveleft" src="{{url_for('static', filename='leave1.png')}}" />
+    <h1 class="welcome">Welcome!</h1>
+    <img id="leaveright" src="{{url_for('static', filename='leave.png')}}" />
+</div>
+
+<div class="hrline">
+    <span class="line"></span>
+</div>
+
+<main class="home-layout">
+    <div style="<div style="width:1000px;height:1000px;overflow:hidden;" >
+        <img id="home-bookcover" src="{{url_for('static', filename='bookcover.jpg')}}" width="200px" height="auto" />
+    </div>
+
+
+    <!------------------from good reads-->
+    <div class="recommendation-right">
+        <h2>Recommendation of the day</h2>
+        <h3>The Great Gatsby</h3>
+        <h4>by F.Scott Fitzgerald</h4>
+        <p style="width: 50vw">The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. 
+            This exemplary novel of the Jazz Age has been acclaimed by generations of readers. 
+            The story is of the fabulously wealthy Jay Gatsby and his new love for the beautiful Daisy Buchanan, 
+            of lavish parties on Long Island at a time when The New York Times noted "gin was the national drink 
+            and sex the national obsession," it is an exquisitely crafted tale of America in the 1920s.<br/>
+
+            The Great Gatsby is one of the great classics of twentieth-century literature.</p>
+    </div>
+</main>
+
+
 
 {% endblock %}
