@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-h1 {
-  color: #285943;
-  
-}
-body {
-  color: #285943;
-} 
-body {
-  background-color: #d3e1e0;
-}
+{% extends 'base.html' %}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 20px;
-  background-color: #d3e1e0;
-  padding: 10px;
-}
+{% block head%}{% endblock %}
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 1);
-  border: 0px solid #285943;
-  text-align: center; 
-  font-size: 24px;
-  filter: drop-shadow(8px 4px 3px #656565)
-}
-</style>
-</head>
-<body>
+{% block body%}
 
 <h1>Fiction Genres</h1>
 
@@ -45,11 +17,6 @@ body {
   <div>Short Stories</div>
 </div>
 
-
-</style>
-</head>
-<body>
-
 <h1>Non-Fiction Genres</h1>
 
 <div class="grid-container">
@@ -61,5 +28,8 @@ body {
   <div>Cooking</div>
 </div>
 
-</body>
-</html>
+
+{% endblock %}
+
+
+
