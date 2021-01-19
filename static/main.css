@@ -70,6 +70,7 @@ nav{
     position: fixed;
     background: #9bb8b6;
     box-shadow: 2px 5px 12px rgba(4, 70, 75, 0.5);
+    z-index: 1;
 }
 
 nav div a{
@@ -208,4 +209,14 @@ nav div a{
     background-color: #9bb8b6;
     margin-top:0px;
     border-radius: 10px 10px 0px 0px;
+}
+
+.community div p{
+    padding-left: 10px;
+}
+
+.community div p:hover{
+    background-color: #9bb8b6;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

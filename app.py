@@ -29,7 +29,35 @@ def explore():
 
 @app.route('/community')
 def community():
-    return render_template("community.html")
+    with open('data/topic1.csv') as file:
+        data = csv.reader(file, delimiter=',')
+        firstline = True
+        topics = []
+        for row in data:
+            if not firstline:
+                topics.append({
+                    "username": row[0],
+                    "comments": row[1]
+                })
+            else:
+                firstline = False
+    return render_template("community.html", topics=topics)
+
+@app.route('/community', methods=["GET", "POST"])
+def submit_comment():
+    if request.method == "GET":
+        return redirect(url_for('community'))
+    elif request.method == "POST":
+        commentdata = dict(request.form)
+        username = commentdata["username"]
+        comments = commentdata["comments"]
+        if(len(username) < 1 or len(comments) < 1):
+            return render_template("community.html", status='name/comments too short')
+        else:
+            with open('data/topic1.csv', mode='a', newline='') as file:
+                data = csv.writer(file)
+                data.writerow([username, comments])
+            return render_template("community.html", status='sent!') 
 
 @app.route('/signin')
 def signin():

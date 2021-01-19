@@ -7,8 +7,30 @@
 <div class="community">
     <section>
         <h2></h2>
-        <div></div>
+        {% block commentlist %}  
+        <div>
+        {% for topic in topics %}
+            <p>
+                <b>@{{ topic.username }}:</b> {{ topic.comments }}
+            </p>
+        {% endfor %}
+        </div>
+        {% endblock %}
+        
     </section>
+    {% block form %}
+    {% if status %}
+        <p>{{ status }}</p>
+    {% endif %}
+
+    <form method="post" action="/community">
+        <p>Your name: <input type="text" name="username"></p>
+        <p>Your thoughts: 
+            <textarea name="comments" placeholder="Enter your thoughts here..."></textarea>
+        </p>
+        <input type="submit">
+    </form>
+    {% endblock %}
     
     <section>
         <h2></h2>
