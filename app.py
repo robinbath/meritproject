@@ -42,6 +42,7 @@ def community():
             else:
                 firstline = False
     return render_template("community.html", topics=topics)
+    
 
 @app.route('/community', methods=["GET", "POST"])
 def submit_comment():
@@ -57,7 +58,8 @@ def submit_comment():
             with open('data/topic1.csv', mode='a', newline='') as file:
                 data = csv.writer(file)
                 data.writerow([username, comments])
-            return render_template("community.html", status='sent!') 
+            #return render_template("community.html", status='sent!') 
+            return redirect(url_for('community'))
 
 @app.route('/signin')
 def signin():

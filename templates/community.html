@@ -6,7 +6,7 @@
 
 <div class="community">
     <section>
-        <h2></h2>
+        <h2>What is the #1 book site that you absolutely recommend?</h2>
         {% block commentlist %}  
         <div>
         {% for topic in topics %}
@@ -23,12 +23,16 @@
         <p>{{ status }}</p>
     {% endif %}
 
-    <form method="post" action="/community">
-        <p>Your name: <input type="text" name="username"></p>
-        <p>Your thoughts: 
-            <textarea name="comments" placeholder="Enter your thoughts here..."></textarea>
+    <form method="post" action="/community" style="width: 100%" class="reviewform">
+        <p style="width: 100%">
+            <p>Username:</p>
+            <center><input type="text" name="username" style="width: 70%"></center>
         </p>
-        <input type="submit">
+        <p style="width: 100%">
+            <p>Your thoughts:</p>
+            <center><textarea name="comments" placeholder="Enter your thoughts here..." style="width: 70%; height: 50px"></textarea></center>
+        </p>
+        <center><input type="submit" class="btn"></center>
     </form>
     {% endblock %}
     
