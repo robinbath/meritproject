@@ -27,6 +27,7 @@ def return_users():
 def explore():
     return render_template("explore.html")
 
+#first topic in community
 @app.route('/community')
 def community():
     with open('data/topic1.csv') as file:
@@ -60,6 +61,9 @@ def submit_comment():
                 data.writerow([username, comments])
             #return render_template("community.html", status='sent!') 
             return redirect(url_for('community'))
+
+
+
 
 @app.route('/signin')
 def signin():

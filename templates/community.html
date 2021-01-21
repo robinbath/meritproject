@@ -5,6 +5,7 @@
 {% block body%}
 
 <div class="community">
+    <!--section 1-->
     <section>
         <h2>What is the #1 book site that you absolutely recommend?</h2>
         {% block commentlist %}  
@@ -18,6 +19,8 @@
         {% endblock %}
         
     </section>
+    <!--end of section 1-->
+    <!--form for section 1-->
     {% block form %}
     {% if status %}
         <p>{{ status }}</p>
@@ -32,19 +35,11 @@
             <p>Your thoughts:</p>
             <center><textarea name="comments" placeholder="Enter your thoughts here..." style="width: 70%; height: 50px"></textarea></center>
         </p>
-        <center><input type="submit" class="btn"></center>
+        <center><input type="submit" class="btn" name="submitform1"></center>
     </form>
     {% endblock %}
+
     
-    <section>
-        <h2></h2>
-        <div></div>
-    </section>
-    
-    <section>
-        <h2></h2>
-        <div></div>
-    </section>
 </div>
 
 
