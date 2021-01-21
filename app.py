@@ -27,6 +27,22 @@ def return_users():
 def explore():
     return render_template("explore.html")
 
+@app.route('/fantasy')
+def fantasy():
+    return render_template("fantasy.html")
+
+@app.route('/clockworkangel')
+def clockworkangel():
+    return render_template("clockworkangel.html")
+
+@app.route('/contemporary')
+def contemporary():
+    return render_template("contemporary.html")
+
+@app.route('/allthebrightplaces')
+def allthebrightplaces():
+    return render_template("allthebrightplaces.html")
+
 #first topic in community
 @app.route('/community')
 def community():
