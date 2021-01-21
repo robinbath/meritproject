@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head%}{% endblock %}
+
+{% block body%}
+
+<main class="home-layout">
+    <div style="<div style="width:1000px;height:1000px;overflow:hidden;" >
+        <img style="padding-top:42px;" id="bcmcover" src="{{url_for('static', filename='allthebrightplaces.jpg')}}" width="300px" height="auto"/>
+    </div>
+
+
+    <!------------------from good reads-->
+    <div class="bookdesc">
+        <!--<h2 style="font-size: 1.5em">Recommendation of the day</h2>-->
+        <h1 style="font-size:2.5em; padding-left:50px; text-align:center;">All The Bright Places</h1>
+        <h2 style="font-size: 1.3em; padding-left:50px; text-align:center;">by Jennifer Niven</h2>
+        <p style="width: 50vw; padding-left:50px; text-align:justify;"><br/>Theodore Finch is fascinated by death, and he constantly thinks of ways he might kill himself. 
+            But each time, something good, no matter how small, stops him.
+            Violet Markey lives for the future, counting the days until graduation, when she can escape her Indiana town and her aching grief in the wake of her sister’s recent death.
+            When Finch and Violet meet on the ledge of the bell tower at school, it’s unclear who saves whom. 
+            And when they pair up on a project to discover the “natural wonders” of their state, both Finch and Violet make more important discoveries: 
+            It’s only with Violet that Finch can be himself—a weird, funny, live-out-loud guy who’s not such a freak after all. 
+            And it’s only with Finch that Violet can forget to count away the days and start living them. But as Violet’s world grows, Finch’s begins to shrink.<br/>
+            </p>
+    </div>
+</main>
+
+
+
+{% endblock %}
