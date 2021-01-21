@@ -148,3 +148,91 @@ nav div a{
     flex-direction: row;
 }
 
+#forest {
+    padding-top: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    background-color: #d3e1e0;
+    padding: 10px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0px solid #285943;
+    text-align: center; 
+    font-size: 24px;
+    filter: drop-shadow(8px 4px 3px #656565)
+}
+
+.centertext{
+    text-align: center;
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community section{
+    width: 70%;
+    background-color: #bbd3d1;
+    margin-top: 50px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.community section h2{
+    width: 100%;
+    height: 10%;
+    background-color: #9bb8b6;
+    margin-top:0px;
+    border-radius: 10px 10px 0px 0px;
+    color: #f4faff;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+} 
+
+.community div p{
+    padding-left: 10px;
+}
+
+.community div p:hover{
+    background-color: #9bb8b6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn{
+    background-color: #9bb8b6;
+    color: #f4faff;
+    font-size: medium;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #f4faff;
+    color: #9bb8b6;
+    transition: ease-in 0.1s;
+}
+
+.reviewform p{
+    text-align: center;
+    margin-top: 0px;
+}

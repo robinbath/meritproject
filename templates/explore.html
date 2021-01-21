@@ -4,5 +4,68 @@
 
 {% block body%}
 
+<style>
+  h1 {
+    color: #285943;
+    
+  }
+  body {
+    color: #285943;
+  } 
+  body {
+    background-color: #d3e1e0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    background-color: #d3e1e0;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0px solid #285943;
+    text-align: center; 
+    font-size: 24px;
+    filter: drop-shadow(8px 4px 3px #656565)
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>Fiction Genres</h1>
+  
+  <div class="grid-container">
+    <div><a href="fantasy.html">Fantasy</a></div>
+    <div>Science Fiction</div>
+    <div><a href="historical.html">Historical Fiction</a></div>
+    <div>Crime/Mystery</div>
+    <div>Romance</div>
+    <div>Humor</div>
+    <div>Fairytale</div>
+    <div>Short Stories</div>
+  </div>
+  
+  
+  </style>
+  </head>
+  <body>
+  
+  <h1>Non-Fiction Genres</h1>
+  
+  <div class="grid-container">
+    <div>Biography</div>
+    <div>Self-Help</div>
+    <div>Reference</div>  
+    <div>Textbooks</div>
+    <div>Narrative</div>
+    <div>Cooking</div>
+  </div>
+  
+  </body>
+  </html>
+
 
 {% endblock %}
