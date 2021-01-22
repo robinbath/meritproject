@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head%}{% endblock %}
+
+{% block body%}
+
+<main class="home-layout">
+    <div style="<div style="width:1000px;height:1000px;overflow:hidden;" >
+        <img style="padding-top:42px;" id="bcmcover" src="{{url_for('static', filename='clockworkangel.jpg')}}" width="300px" height="auto"/>
+    </div>
+
+
+    <!------------------from good reads-->
+    <div class="bookdesc">
+        <!--<h2 style="font-size: 1.5em">Recommendation of the day</h2>-->
+        <h1 style="font-size:2.5em; padding-left:50px; text-align:center;">Clockwork Angel</h1>
+        <h2 style="font-size: 1.3em; padding-left:50px; text-align:center;">by Cassandra Clare</h2>
+        <p style="width: 50vw; padding-left:50px; text-align:justify;"><br/>The year is 1878. Tessa Gray descends into London’s dark supernatural underworld in search of her missing brother. 
+            She soon discovers that her only allies are the demon-slaying Shadowhunters—including Will and Jem, the mysterious boys she is attracted to. 
+            Soon they find themselves up against the Pandemonium Club, a secret organization of vampires, demons, warlocks, and humans. 
+            Equipped with a magical army of unstoppable clockwork creatures, the Club is out to rule the British Empire, and only Tessa and her allies can stop them.<br/>
+            </p>
+    </div>
+</main>
+
+
+
+{% endblock %}

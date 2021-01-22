@@ -2,11 +2,29 @@
 body{
     background-color: #d3e1e0;
     color: #f4faff;
-    padding-top: 70px;
+    min-height: 100%;
     font-family: "Lucida Console", "Courier New", monospace;
-    width: 100vw;
 }
-  
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -25px;
+}
+
+.footer, .push {
+    height: 25px;
+}
+
+main{
+    padding-top: 70px;
+    padding-bottom: 50px; 
+}
+
 .logo{
     font-size: 1.3em;
     display: flex;
@@ -45,12 +63,14 @@ nav{
     letter-spacing: 2px;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 4px 50px;
     position: fixed;
     background: #9bb8b6;
     box-shadow: 2px 5px 12px rgba(4, 70, 75, 0.5);
+    z-index: 1;
 }
 
 nav div a{
@@ -76,9 +96,11 @@ nav div a{
     box-sizing: border-box;
     width: 100%;
     font-family: "Lucida Console", "Courier New", monospace;
-    position: fixed;
-    padding-left: 10px;
     font-size: 1em;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .welcome{
@@ -128,7 +150,7 @@ nav div a{
 }
 
 #home-bookcover{
-    padding: 20px;
+    padding-right: 20px;
 }
 
 .fontcolor{
@@ -236,3 +258,22 @@ nav div a{
     text-align: center;
     margin-top: 0px;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#about-forest {
+    width: 30%;
+    padding-top: 40px;
+    padding-left: 570px;
+}
+
+
+
+
+
